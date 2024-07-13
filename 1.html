@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mss_roxh - e-z.bio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://i.imgur.com/thujmcs.gif');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            position: relative;
+        }
+        .profile {
+            position: relative;
+            background-color: rgba(90, 0, 157, 0.8); /* Morado azulado */
+            border-radius: 8px;
+            padding: 20px;
+            overflow: hidden; /* Evitar que el banner sobrepase el cuadro */
+            margin-bottom: 20px; /* Espacio entre los cuadros */
+        }
+        .profile .banner {
+            position: absolute;
+            top: -20px;
+            left: -20px;
+            width: calc(100% + 40px);
+            height: calc(100% + 40px);
+            background-image: url('https://i.imgur.com/jw3dl7t.gif');
+            background-size: cover;
+            background-position: center;
+            filter: brightness(70%); /* Oscurecer el banner para que el texto sea legible */
+            z-index: 0; /* Colocar detrás del contenido */
+            border-radius: 12px; /* Añadir bordes redondeados */
+            box-shadow: 0 0 20px rgba(255, 0, 220, 0.5), 0 0 30px rgba(0, 255, 255, 0.7), 0 0 40px rgba(0, 0, 255, 0.5); /* Efecto RGB suavizado */
+        }
+        .profile img {
+            position: relative;
+            z-index: 1; /* Asegurar que la imagen de perfil esté por encima del banner */
+            width: 120px; /* Reducir el tamaño de la imagen */
+            border-radius: 50%;
+            margin-bottom: -20px; /* Solapar el banner */
+        }
+        .profile h1,
+        .profile p {
+            position: relative;
+            z-index: 3; /* Asegurar que el texto esté por encima de todo */
+            color: #ffffff; /* Texto blanco */
+        }
+        .profile a {
+            color: #00ffea; /* Color de enlaces de neón */
+            text-decoration: none;
+        }
+        .description {
+            background-color: rgba(90, 0, 157, 0.5); /* Morado azulado semi-transparente */
+            padding: 20px;
+            color: #ffffff; /* Texto blanco */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+        }
+        .social-buttons {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+            position: relative;
+            z-index: 3; /* Colocar por encima del banner */
+        }
+        .social-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background-color: rgba(90, 0, 157, 0.8); /* Morado azulado */
+            border-radius: 50%;
+            border: 2px solid #00ffea; /* Bordes neon */
+            color: #ffffff; /* Texto blanco */
+            font-size: 20px;
+            transition: transform 0.3s ease-in-out; /* Transición suave */
+            box-shadow: 0 0 10px rgba(255, 0, 220, 0.5), 0 0 15px rgba(0, 255, 255, 0.7), 0 0 20px rgba(0, 0, 255, 0.5); /* Efecto RGB suavizado */
+        }
+        .social-button:hover {
+            transform: scale(1.1); /* Efecto de aumento al pasar el mouse */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="profile">
+            <div class="banner"></div>
+            <img src="https://i.imgur.com/QzQ3P01.png" alt="Tu foto">
+            <h1>mss_roxh</h1>
+            <p>Meow Meow Meow </p>
+            <p>Puedes decirme Roxh </p>
+            <div class="social-buttons">
+                <a href="https://www.instagram.com/mss_roxh/" class="social-button">IG</a>
+                <a href="https://discord.com/channels/@me/1235260689887793312" class="social-button">DC</a>
+                <a href="https://www.epal.gg/epal/2312340" class="social-button">EP</a>
+                <a href="https://www.twitch.tv/mss_roxh" class="social-button">TW</a>
+                <a href="https://steamcommunity.com/profiles/76561198396888098/" class="social-button">ST</a>
+            </div>
+        </div>
+        <div class="description">
+            <p>Amante de los gatos que encuentra alegría en la compañía felina. Su vida se desenvuelve en el mundo digital, donde explora Minecraft, Genshin Impact, Unturned, Apex Legends, y Naraka Bladepoint, destacándose como hábil jugadora. Las llamadas de Discord son su medio preferido para conectarse con amigos. Es una creativa consumada, expresándose a través del dibujo y deleitando paladares con su habilidad culinaria y más.</p>
+        </div>
+    </div>
+</body>
+</html>
